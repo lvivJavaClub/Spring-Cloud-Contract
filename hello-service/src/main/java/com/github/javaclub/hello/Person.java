@@ -11,8 +11,4 @@ class Person {
   private Long id;
 
   private String name;
-
-  private String surname;
-
-  private Integer age;
 }

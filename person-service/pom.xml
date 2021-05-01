@@ -37,11 +37,12 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-contract-verifier</artifactId>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-contract-verifier</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <dependencyManagement>
@@ -63,15 +64,15 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
 
-<!--      <plugin>-->
-<!--        <groupId>org.springframework.cloud</groupId>-->
-<!--        <artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
-<!--        <version>${spring-cloud-contract.version}</version>-->
-<!--        <extensions>true</extensions>-->
-<!--        <configuration>-->
-<!--          <baseClassForTests>com.github.javaclub.person.BaseClass</baseClassForTests>-->
-<!--        </configuration>-->
-<!--      </plugin>-->
+      <plugin>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+        <version>${spring-cloud-contract.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <baseClassForTests>com.github.javaclub.person.BaseClass</baseClassForTests>
+        </configuration>
+      </plugin>
 
     </plugins>
   </build>
